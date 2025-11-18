@@ -1,13 +1,25 @@
 {
   "name": "fluxless-react",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.2",
+  "description": "Minimalistic state manager for React that uses fluxless core",
   "main": "index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "jest",
     "build": "tsup"
   },
-  "keywords": [],
+  "keywords": [
+    "state",
+    "state-management",
+    "store",
+    "react",
+    "flux",
+    "fluxless",
+    "observable",
+    "redux-alternative"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
