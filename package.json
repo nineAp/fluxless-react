@@ -1,0 +1,23 @@
+{
+  "name": "fluxless-react",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsup"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^19.2.5",
+    "jest": "^30.2.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "fluxless": "^0.1.5",
+    "react": "^19.2.0"
+  }
+}
