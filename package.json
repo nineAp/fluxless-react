@@ -1,6 +1,6 @@
 {
   "name": "fluxless-react",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Minimalistic state manager for React that uses fluxless core",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
