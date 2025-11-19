@@ -1,6 +1,6 @@
 {
   "name": "fluxless-react",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Minimalistic state manager for React that uses fluxless core",
   "main": "dist/index.cjs",
   "module": "dist/index.js",

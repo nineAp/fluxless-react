@@ -7,13 +7,15 @@ export class Context<T> {
     this.context = createContext(defaultValue);
   }
 
-  Provider({ children, value }: PropsWithChildren<{ value: T }>) {
+  Provider = ({ children, value }: PropsWithChildren<{ value: T }>) => {
     return (
       <this.context.Provider value={value}>{children}</this.context.Provider>
     );
-  }
+  };
 
-  use() {
-    return useContext(this.context);
+  use = () => useContext(this.context);
+
+  getContext(): React.Context<T> {
+    return this.context;
   }
 }
