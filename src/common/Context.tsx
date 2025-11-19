@@ -13,9 +13,11 @@ export class Context<T> {
     );
   };
 
-  use = () => useContext(this.context);
-
-  getContext(): React.Context<T> {
-    return this.context;
+  use() {
+    const context = useContext(this.context);
+    if (!context) {
+      throw new Error("There is no context provded");
+    }
+    return context;
   }
 }
