@@ -1,13 +1,17 @@
+import { SliceMap, Store } from "fluxless";
 import React, { createContext, PropsWithChildren, useContext } from "react";
 
 export class Context<T> {
-  private context: React.Context<T>;
+  private context: React.Context<Store<SliceMap<T>>>;
 
-  constructor(defaultValue: T) {
-    this.context = createContext(defaultValue);
+  constructor(defaultValue: Store<SliceMap<T>>) {
+    this.context = createContext<Store<SliceMap<T>>>(defaultValue);
   }
 
-  Provider = ({ children, value }: PropsWithChildren<{ value: T }>) => {
+  Provider = ({
+    children,
+    value,
+  }: PropsWithChildren<{ value: Store<SliceMap<T>> }>) => {
     return (
       <this.context.Provider value={value}>{children}</this.context.Provider>
     );
